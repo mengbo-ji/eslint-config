@@ -20,5 +20,14 @@
   },
   "engines": {
     "node": "^10.12.0 || >=12.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbbbbbo/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bbbbbbo/eslint-config/issues"
+  },
+  "homepage": "https://github.com/bbbbbbo/eslint-config#readme"
 }
