@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "标准化的一个eslint-config配置方案",
   "main": "index.js",
   "scripts": {
