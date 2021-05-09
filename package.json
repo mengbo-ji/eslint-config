@@ -1,0 +1,24 @@
+{
+  "name": "@rc/eslint-config-react",
+  "version": "1.0.0",
+  "description": "标准化的一个eslint-config配置方案",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "react",
+    "typescript"
+  ],
+  "author": "mengbo-ji",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint-config-egg": "^9.0.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0"
+  },
+  "engines": {
+    "node": "^10.12.0 || >=12.0.0"
+  }
+}
