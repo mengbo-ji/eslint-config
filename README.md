@@ -3,7 +3,7 @@
 ### eslint 插件安装
 
 ```js
-$ npm install @rc/eslint-config-react eslint --save--dev 
+$ npm install eslint-config-rc eslint --save--dev 
 ```
 
 ### git-pre-hooks 安装
@@ -82,7 +82,7 @@ devServer: {
 
 ```js
 module.exports = {
-  extends: '@rc/eslint-config-react',
+  extends: 'eslint-config-rc',
 };
 
 ```
@@ -99,7 +99,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: '@rc/eslint-config-react/typescript',
+  extends: 'eslint-config-rc/typescript',
   parserOptions: {
     project: './tsconfig.json', // tsconfig配置看个人
   },
