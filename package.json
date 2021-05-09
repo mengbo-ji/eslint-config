@@ -1,5 +1,5 @@
 {
-  "name": "@mb/eslint-config-mb",
+  "name": "eslint-config-mb",
   "version": "1.0.0",
   "description": "标准化的一个eslint-config配置方案",
   "main": "index.js",
