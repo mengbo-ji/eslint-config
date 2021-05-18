@@ -37,7 +37,7 @@ $ npm install eslint-formatter-pretty --save-dev
 ],
 ```
 
-### package.json 添加以下配置（commit的时候出发检测钩子）
+### package.json 添加以下配置（commit的时候触发检测钩子）
 
 ```json
 "scripts": {
@@ -64,6 +64,16 @@ const eslintFormatterPretty = require('eslint-formatter-pretty');
     failOnError: true
   }
 },
+// ts使用
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+plugins: [
+  new ForkTsCheckerWebpackPlugin({
+    tsconfig: path.resolve(__dirname, '../tsconfig.json'),
+    async: false,
+    silent: true,
+    eslint: true,
+  }),
+]
 ```
 
 > 修改devServer overlay属性 不然eslint报错会阻塞代码编译.
