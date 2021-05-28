@@ -1,3 +1,9 @@
+# eslint-config-rc
+
+1. 支持 `TypeScript` 和 `JavaScript` 
+2. 自动格式化代码，无需手动
+3. script 脚本支持 lint 和 lint-fix 两个命令
+
 # 安装
 
 ### eslint 插件安装
@@ -52,8 +58,9 @@ $ npm install eslint-formatter-pretty --save-dev
 ### webpack 添加以下配置（注意loader放置顺序）
 
 ```js
+// js使用
 const eslintFormatterPretty = require('eslint-formatter-pretty');
-{
+rules: [{
   test: /\.(js|jsx|ts|tsx)$/,
   loader: 'eslint-loader',
   exclude: /(node_modules)/,
@@ -63,7 +70,7 @@ const eslintFormatterPretty = require('eslint-formatter-pretty');
     emitError: true,
     failOnError: true
   }
-},
+}],
 // ts使用
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 plugins: [
@@ -88,16 +95,15 @@ devServer: {
 
 ### JavaScript
 
-1. 根目录创建 `.eslintrc.js`  写入一下配置
+- 根目录创建 `.eslintrc.js` 写入一下配置
 
 ```js
 module.exports = {
   extends: 'eslint-config-rc',
 };
-
 ```
 
-2. 根目录创建 `.eslintignore`
+- 根目录创建 `.eslintignore`
 
 ```js
 /node_modules/ //忽略xxxx文件
@@ -105,7 +111,7 @@ module.exports = {
 
 ### TypeScript
 
-1. 根目录创建 `.eslintrc.js`  写入一下配置
+- 根目录创建 `.eslintrc.js` 写入一下配置
 
 ```js
 module.exports = {
@@ -116,9 +122,8 @@ module.exports = {
 };
 ```
 
-2. 根目录创建 `.eslintignore`
+- 根目录创建 `.eslintignore`
 
 ```js
 /node_modules/ // 忽略xxxx文件
 ```
-
